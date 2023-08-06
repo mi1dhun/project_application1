@@ -34,9 +34,22 @@ class SignUp extends StatelessWidget {
                 decoration: InputDecoration(
                   hintText: "Password" ,
                   prefixIcon: Icon(Icons.password),
-                )
-            ),
 
+                )
+
+            ),
+            TextField(
+              decoration:InputDecoration(
+                hintText: "conforim password",
+                prefixIcon: Icon(Icons.password),
+              ) ,
+            ),
+            ElevatedButton(onPressed: (){
+
+            }, child: Text("Login")),
+            TextButton(onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SignUp()));
+            }, child:Text("already have an account?login"))
           ],
         ),
       ),

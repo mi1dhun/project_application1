@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_application1/signup.dart';
 
 class Login extends StatelessWidget {
 
@@ -36,7 +37,12 @@ class Login extends StatelessWidget {
              prefixIcon: Icon(Icons.password),
          )
             ),
+        ElevatedButton(onPressed: (){
 
+        }, child: Text("Login")),
+            TextButton(onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SignUp()));
+            }, child:Text("does'nt have an account? signup"))
           ],
         ),
       ),

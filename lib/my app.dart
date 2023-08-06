@@ -30,6 +30,7 @@ class _RegisterState extends State<Register> {
                  fontWeight: FontWeight.normal,
                  color: Colors.black), ),
            Image.asset("assets/images/logo.jpg"),
+
            Padding(
              padding: const EdgeInsets.all(8.0),
              child: ElevatedButton(onPressed: (){
